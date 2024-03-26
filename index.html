@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Умный дом</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <!--Контейнер для заголовка-->
+        <h1 class="header__h1">Умный дом</h1>
+        <!--Заголовок-->
+      </div>
+    </header>
+    <main>
+      <section class="main__container">
+        <!--Общий контейнер для данных-->
+        <div class="main__humidity">
+          <!--Контейнер для влажности-->
+          <p class="humidity__name">Влажность</p>
+          <div class="progress__bar_humidity">
+            <progress
+              value="43"
+              min="0"
+              max="100"
+              class="progress__value_humidity"
+            >
+              43%
+            </progress>
+            <!--состояние влажности-->
+          </div>
+        </div>
+        <div class="main__temperature">
+          <!--Контейнер для температуры-->
+          <p class="temperature__name">Температура</p>
+          <div class="progress__bar_temperature">
+            <progress
+              value="22"
+              min="0"
+              max="50"
+              class="progress__value_temperature"
+            >
+              22°C
+            </progress>
+            <!--состояние температуры-->
+          </div>
+        </div>
+        <div class="main__door" for="toggle">
+          <!--Контейнер для двери-->
+          <p class="door__name">Дверь</p>
+          <label class="switch__door">
+            <input type="checkbox" class="input__door" />
+            <span class="span__door_close"></span>
+          </label>
+        </div>
+        <div class="main__light" for="toggle">
+          <!--Контейнер для света-->
+          <p class="light__name">Свет</p>
+          <label class="switch__light">
+            <input type="checkbox" class="input__light" />
+            <span class="span__light_close"></span>
+          </label>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

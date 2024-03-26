@@ -1,0 +1,40 @@
+.main__humidity {
+  background-color: rgb(74, 188, 233);
+  border-radius: 10px;
+  width: 200px;
+  height: 150px;
+}
+
+.humidity__name {
+  margin: 0px auto 5px auto;
+  text-align: center;
+  font-family: GOST Type B;
+  font-style: italic;
+  font-size: 30px;
+  color: white;
+  border-radius: 10px;
+}
+
+.progress__bar_humidity {
+  margin: 2px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(rgb(64, 121, 243) 43%, rgb(167, 189, 192) 0);
+}
+
+.progress__value_humidity {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.progress__bar_humidity::before {
+  content: "43%";
+  position: relative;
+  font-family: GOST Type A;
+  font-size: 25px;
+  left: 34px;
+  top: 35px;
+}
